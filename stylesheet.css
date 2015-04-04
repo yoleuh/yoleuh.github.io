@@ -1,3 +1,11 @@
+#header {
+	position: relative;
+	top: -10px;
+	background-color: #3c4543;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
 body {
     background-image: url("http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2012/08/minimal-background-pattern-wordpress-1.jpg");
     background-color: #cccccc;
