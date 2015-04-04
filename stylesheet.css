@@ -2,3 +2,20 @@ body {
     background-image: url("http://gdj.gdj.netdna-cdn.com/wp-content/uploads/2012/08/minimal-background-pattern-wordpress-1.jpg");
     background-color: #cccccc;
 }
+
+#left{
+	width: 45%;
+	float: left;
+}
+
+#right{
+	width: 45%;
+	float: right;
+}
+
+img {
+	height: 170px;
+	width: 170px;
+	box-shadow: rgba(0,0,0,0.2) 10px 10px;
+
+}
