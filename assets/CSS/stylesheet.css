@@ -28,8 +28,7 @@ h3 {
 	left: 0;
 	width: 100%;
 	font-size: : 20px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	
-;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #EEF1FE;
 }
 
@@ -44,4 +43,22 @@ h3 span {
 image {
 	position: relative;
 	width: 100%;
+}
+
+#footer {
+	padding: 10px;
+}
+
+.text {
+	margin-right: 250px;
+	margin-left: 250px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+p::first-letter { 
+    font-size: 250%;
+    color: #1B5E73;
 }
