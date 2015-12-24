@@ -23,7 +23,8 @@ body {
 
 img {
 	height: 300px;
-	width: 300px;
+	width: 500px;
+	border-radius: 25px;
+	border: 5px solid #4A674C;
 	box-shadow: rgba(0.2,0.2,0.2,0.2) 10px 10px;
-
 }
