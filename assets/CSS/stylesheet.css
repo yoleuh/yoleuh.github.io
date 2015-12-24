@@ -1,76 +1,47 @@
-.header {
-	position: relative;
-/*	top: -10px;
-	background-color: #1B5E73;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;*/
-}
-
 body {
+	text-align: center;
     background-color: #EEF1FE ;
-    text-align: center;
-}
-
-#left{
-	width: 45%;
-	float: left;
-}
-
-#right{
-	width: 45%;
-	float: right;
-}
-
-img {
-	height: 525px;
-	width: 100%;
-/*	border-radius: 25px;*/
 }
 
 h1 {
-	position: absolute;;
-	top: 190px;
+	position: absolute;
+	top: 260px;
 	left: 0;
 	width: 100%;
 	font-size: : 40px;
-	font-family: Avenir Book;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	
+;
 	color: #EEF1FE;
 }
 
 h1 span {
 	color: #EEF1FE; 
-   	font: bold 50px Helvetica, Sans-Serif; 
+   	font: bold 60px Helvetica, Sans-Serif;
+   	font-weight: 100; 
    	letter-spacing: -1px;  
    	padding: 10px; 
 }
 
 h3 {
-	position: absolute;;
-	top: 250px;
+	position: absolute;
+	top: 325px;
 	left: 0;
 	width: 100%;
 	font-size: : 20px;
-	font-family: Avenir Book;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	
+;
 	color: #EEF1FE;
 }
 
 h3 span {
 	color: #EEF1FE; 
    	font: bold 20px Helvetica, Sans-Serif; 
+   	font-weight: 100;
    	letter-spacing: -1px;  
    	padding: 10px; 
 }
 
-.header3 {
-	font-family: Avenir Book;
-	color: #EEF1FE;
-}
-
-.header3:hover {
-	color: #808747;
-}
-
-.image {
+image {
 	position: relative;
 	width: 100%;
 }
