@@ -5,12 +5,12 @@ body {
 
 h1 {
 	position: absolute;
-	top: 260px;
-	left: 0;
+	top: 150px;
+	left: -300px;
+	right: 0;
 	width: 100%;
 	font-size: : 40px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif	
-;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color: #EEF1FE;
 }
 
@@ -24,8 +24,9 @@ h1 span {
 
 h3 {
 	position: absolute;
-	top: 325px;
-	left: 0;
+	top: 210px;
+	left: -400px;
+	right: 0;
 	width: 100%;
 	font-size: : 20px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -42,16 +43,19 @@ h3 span {
 
 .image {
 	position: relative;
+	height: 100%;
 	width: 100%;
 }
 
 img {
-	height: 525px;
+	/*height: 525px;*/
+	height: 100%;
 	width: 100%;
 /*	border-radius: 25px;*/
 }
 
 #footer {
+	color: #808747;
 	padding: 10px;
 }
 
@@ -62,6 +66,7 @@ img {
 	margin-bottom: 50px;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
 	font-weight: bold;
+	color: #4B454A;
 }
 
 p::first-letter { 
