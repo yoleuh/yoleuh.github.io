@@ -1,32 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Lara McConnaughey</title>
-  <link type="text/css" rel="stylesheet" href="assets/CSS/stylesheet.css"/>
+  <meta charset="UTF-8">
+  <title>Lara's site</title>
+  <link rel="stylesheet" href="./normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      height: calc(100% - 20px);
+      width: calc(100% - 40px);
+      position: relative;
+      font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+      padding: 10px 20px 10px 20px;
+    }
+    a {
+      display: inline-block;
+      position: relative;
+      -webkit-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+      transition: all 0.2s ease-out;
+    }
+  </style>
 </head>
 <body>
-	<div class = "image">
-		<img src="assets/IMG/larger.png">
-    <h1> <span> Lara McConnaughey </span> </h1>
-    <h3> <span> Resume | Research | Fun </span> </h3>
-	</div>
-  <div class = "text">
-    <p>
-      Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues. Li nov lingua franca va esser plu simplic e regulari quam li existent Europan lingues. It va esser tam simplic quam Occidental in fact, it va esser Occidental. A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles.
-    </p>
-  </div>
-  <hr COLOR="#1B5E73"></hr>
-  <div id = "footer" COLOR="4B454A">
-    <h4> STUFF </h4>
-  </div>
+  <h1>Lara's site</h1>
+  <p>Thanks for visiting my website. You'll find some useful links below.</p>
+  <a href="">My résumé</a>
+  <br>
+  <a href="">LinkedIn</a>
+
+  <script src="./jquery-3.1.1.min.js"></script>
+  <script>
+    function randomFromInterval(min, max) {
+      return Math.random() * (max - min + 1) + min;
+    }
+    // initial link locations
+    $('a').each(function() {
+      $(this).data("initialValues", {top: $(this).offset().top, left: $(this).offset().left});
+    })
+
+    $('a').mouseenter(function() {
+      var pageHeight = $('body').height();
+      var pageWidth = $('body').width();
+      var myWidth = $(this).width();
+      var myHeight = $(this).height();
+      var myInitTop = $(this).data().initialValues.top;
+      var myInitLeft = $(this).data().initialValues.left;
+      $(this).css({
+        'transform':'translate('
+                    + (randomFromInterval(0, pageWidth - myWidth) - myInitLeft) + 'px, '
+                    + (randomFromInterval(0, pageHeight - myHeight) - myInitTop) + 'px)'
+      });
+    });
+    console.log('%c good thinking!', 'font-family: "Helvetica Neue"; color: #2a46ae; font-size: 24px;');
+  </script>
 </body>
 </html>
-
-
-
-
-+
-          <b>Sample of script:</b> \n +
-        Location (country, not long/lat) \n +
-        Language(s) \n +
-        Dates 
