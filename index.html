@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>^_^</title>
   <link rel="stylesheet" href="./normalize.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <style>
     html {
       height: 100%;
     }
+
     body {
       height: calc(100% - 20px);
       width: calc(100% - 40px);
@@ -16,6 +18,7 @@
       font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
       padding: 10px 20px 10px 20px;
     }
+
     a {
       display: inline-block;
       position: relative;
@@ -25,6 +28,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>brian's site</h1>
   <p>Thanks for visiting my website. You'll find some useful links below.</p>
@@ -38,11 +42,11 @@
       return Math.random() * (max - min + 1) + min;
     }
     // initial link locations
-    $('a').each(function() {
-      $(this).data("initialValues", {top: $(this).offset().top, left: $(this).offset().left});
+    $('a').each(function () {
+      $(this).data("initialValues", { top: $(this).offset().top, left: $(this).offset().left });
     })
 
-    $('a').mouseenter(function() {
+    $('a').mouseenter(function () {
       var pageHeight = $('body').height();
       var pageWidth = $('body').width();
       var myWidth = $(this).width();
@@ -50,12 +54,13 @@
       var myInitTop = $(this).data().initialValues.top;
       var myInitLeft = $(this).data().initialValues.left;
       $(this).css({
-        'transform':'translate('
-                    + (randomFromInterval(0, pageWidth - myWidth) - myInitLeft) + 'px, '
-                    + (randomFromInterval(0, pageHeight - myHeight) - myInitTop) + 'px)'
+        'transform': 'translate('
+          + (randomFromInterval(0, pageWidth - myWidth) - myInitLeft) + 'px, '
+          + (randomFromInterval(0, pageHeight - myHeight) - myInitTop) + 'px)'
       });
     });
     console.log('%c good thinking!', 'font-family: "Helvetica Neue"; color: #2a46ae; font-size: 24px;');
   </script>
 </body>
+
 </html>
